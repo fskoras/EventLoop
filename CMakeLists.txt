@@ -10,7 +10,7 @@ add_library(${PROJECT_N} src/event_loop.c)
 target_include_directories(${PROJECT_N} PUBLIC include)
 
 # TESTS
-add_executable(multi_producer_test example/main.c)
+add_executable(multi_producer_test example/multi_producer_test.c)
 target_link_libraries(multi_producer_test PRIVATE ${PROJECT_N})
 enable_testing()
 add_test(multi-producer multi_producer_test)
